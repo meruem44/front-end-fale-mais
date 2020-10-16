@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import fundo from '../../assets/fundo.jpg';
+import fundo from '../../assets/list.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -21,21 +21,10 @@ export const Content = styled.div`
   max-width: 700px;
 
   img {
-      width: 250px;
+      width: 200px;
+      margin-bottom: 10px;
   }
 
-  form {
-      width: 400px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h1 {
-          margin-bottom: 20px;
-          text-align: center;
-      }
-  }
 
   a {
     color: #fff;
@@ -53,5 +42,21 @@ export const Background = styled.div`
   flex: 1;
   background: url(${fundo}) no-repeat center;
   background-size: cover;
+`;
+
+
+export const ContentList = styled.div`
+      width: 400px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 60%;
+      overflow: scroll;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      padding: 10px;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
 `;
 

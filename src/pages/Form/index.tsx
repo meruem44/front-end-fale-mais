@@ -1,9 +1,12 @@
 import React from 'react';
-import { FaClipboardList } from 'react-icons/fa';
+import { FaClipboardList, FaUserCircle, FaAddressCard , FaMailchimp} from 'react-icons/fa';
 
 import logoImg from '../../assets/logo.png';
 
 import { Container, Content, Background } from './styles';
+
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 const Form: React.FC = () => {
   return (
@@ -14,15 +17,15 @@ const Form: React.FC = () => {
             <form>
                 <h1>Preencha o formulario e fale conosco</h1>
             
-                <input placeholder="Primeiro nome" />
-                <input placeholder="Último nome" />
-                <input placeholder="Endereço" />
-                <input placeholder="Unidade / Apto" />
-                <input placeholder="Cidade" />
-                <input placeholder="Província / Território" />
-                <input placeholder="E-mail" />
+                <Input name="firstName" icon={FaUserCircle}  placeholder="Primeiro nome" />
+                <Input name="lastName" icon={FaUserCircle} placeholder="Último nome" />
+                <Input name="lastName" icon={FaAddressCard} placeholder="Endereço" />
+                <Input name="lastName" icon={FaAddressCard} placeholder="Unidade / Apto" />
+                <Input name="lastName" icon={FaAddressCard} placeholder="Cidade" />
+                <Input name="lastName" icon={FaAddressCard} placeholder="Província / Território" />
+                <Input name="email" icon={FaMailchimp} placeholder="E-mail" />
             
-                <button type='submit'>Enviar</button>
+                <Button type='submit'>Enviar</Button>
 
             </form>
             <a href="#">Ver Lista de pedidos <FaClipboardList /></a>
