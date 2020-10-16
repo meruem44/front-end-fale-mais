@@ -1,0 +1,67 @@
+------ PERGUNTE:
+Faça um simples formulário "Fale conosco :.
+Indo para a raiz "/" do site deve carregar este formulário de contato.
+Ele captura as seguintes informações em campos individuais:
+
+* Primeiro nome
+* Último nome
+* Endereço
+* Unidade / Apto
+* Cidade
+* Província / Território
+* O email
+
+Queremos que as cidades sejam dependentes da província.
+Exemplo: Selecionar Ontário pode mostrar cidades como Toronto, Oshawa, etc ...; 
+Cidades Yukon como Whitehorse, Dawson, etc ...; para todas as províncias e territórios do Canadá.
+
+
+Deve haver mensagens de erro mostrando quando as regras de validação abaixo não estão corretas:
+Todos os campos, exceto Unidade / Apt são obrigatórios.
+O e-mail deve estar no formato correto.
+O primeiro nome tem no máximo 40 caracteres.
+O sobrenome tem no máximo 40 caracteres.
+O endereço da rua tem no máximo 128 caracteres.
+Unidade / Apt possui no máximo 128 caracteres.
+O e-mail tem no máximo 128 caracteres.
+A cidade tem no máximo 32 caracteres.
+A província tem no máximo 32 caracteres.
+
+Envie as informações de contato para o seguinte endpoint:
+https://imc-hiring-test.azurewebsites.net/Contact/Save
+O endpoint espera o seguinte:
+Nome: string
+Endereço: string
+Endereço2: string
+Cidade: string
+Província: string
+Email: string
+
+Quando as informações de contato são salvas com sucesso, ela deve mostrar uma mensagem de sucesso em vez do formulário.
+Se as informações de contato não forem salvas com sucesso, uma mensagem de erro genérica aparecerá 
+na parte superior do formulário.
+
+------NOTAS:
+Requisitos:
+
+- A estrutura de back-end deve ser .NET MVC.
+- Este pedido deve funcionar nas versões mais recentes para os seguintes navegadores: 
+(Chrome, Firefox, Edge e até mesmo IE). Qualquer ferramenta para fazer isso está bem.
+
+Extra:
+
+- Você pode usar qualquer estrutura de front-end e ferramentas que desejar. 
+Incluímos ferramentas para uma biblioteca global e React.
+- Você pode estruturar o site da maneira que achar melhor ou com a 
+qual esteja mais familiarizado, de acordo com os requisitos acima.
+- Quanto mais você mostrar seu conhecimento de MVC, melhor. Queremos 
+ver o uso de C # e JS, não apenas um ou outro.
+
+Positivos / negativos:
+
+- Ainda tente enviar o teste, mesmo que todos os requisitos não sejam exatamente atendidos.
+- A legibilidade é considerada positiva.
+- Todas as otimizações em torno da velocidade e do tamanho do ativo que você fizer serão consideradas positivas.
+- Algum esforço para estilizar e corrigir o HTML é positivo, mas não é o foco principal.
+- Quanto mais você mostrar seu conhecimento de estruturas Javascript + modernas, melhor.
+
